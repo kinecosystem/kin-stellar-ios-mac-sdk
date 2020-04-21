@@ -21,7 +21,7 @@ public enum TransactionResultCode: Int32 {
     case internalError = -11 // an unknown error occured
 }
 
-public enum TransactionResultBodyXDR: Encodable {
+public enum TransactionResultBodyXDR: XDREncodable {
     case success([OperationResultXDR])
     case failed
     
