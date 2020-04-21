@@ -9,7 +9,7 @@
 import Foundation
 
 public struct AccountEntryXDR: XDRCodable {
-    let accountID: PublicKey
+    public let accountID: PublicKey
     public let balance: Int64
     public let sequenceNumber: Int64
     public let numSubEntries:UInt32
