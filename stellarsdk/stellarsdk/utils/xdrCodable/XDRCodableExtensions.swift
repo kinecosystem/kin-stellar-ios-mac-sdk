@@ -10,7 +10,7 @@
 
 import Foundation
 
-func decodeArray<T: Codable>(type:T.Type, dec:Decoder) throws -> [T] {
+public func decodeArray<T: Codable>(type:T.Type, dec:Decoder) throws -> [T] {
     guard let decoder = dec as? XDRDecoder else {
         throw XDRDecoder.Error.typeNotConformingToDecodable(Decoder.Type.self)
     }
