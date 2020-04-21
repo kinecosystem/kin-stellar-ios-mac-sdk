@@ -82,7 +82,8 @@ public class Operation {
     }
     
     static func toXDRAmount(amount:Decimal) -> Int64 {
-        let multiplied = amount * 10000000
+        // Adjusted conversion to 100000:1 for Quark to Kin
+        let multiplied = amount * 100000
         let decimalNumber = NSDecimalNumber(decimal: multiplied)
         let handler = NSDecimalNumberHandler(roundingMode: NSDecimalNumber.RoundingMode.bankers, scale: 0, raiseOnExactness: false, raiseOnOverflow: false, raiseOnUnderflow: false, raiseOnDivideByZero: false)
         let rounded = decimalNumber.rounding(accordingToBehavior: handler)
@@ -91,8 +92,9 @@ public class Operation {
     }
     
     static func fromXDRAmount(_ xdrAmount:Int64) -> Decimal {
+        // Adjusted conversion to 100000:1 for Quark to Kin
         var decimal = Decimal(xdrAmount)
-        decimal = decimal / 10000000
+        decimal = decimal / 100000
         
         return decimal
     }
