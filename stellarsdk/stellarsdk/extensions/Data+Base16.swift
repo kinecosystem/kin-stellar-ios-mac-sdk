@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Data {
+public extension Data {
     init?(fromHexEncodedString string: String) {
         
         // Convert 0 ... 9, a ... f, A ...F to their decimal value,
@@ -43,8 +43,12 @@ extension Data {
     }
     
     struct HexEncodingOptions: OptionSet {
-        let rawValue: Int
+        public let rawValue: Int
         static let upperCase = HexEncodingOptions(rawValue: 1 << 0)
+
+        public init(rawValue: Int) {
+            self.rawValue = rawValue
+        }
     }
     
     func hexEncodedString(options: HexEncodingOptions = []) -> String {
