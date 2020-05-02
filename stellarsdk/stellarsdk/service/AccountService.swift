@@ -75,6 +75,12 @@ open class AccountService: NSObject {
         }
     }
 
+    open func stream(accountId: String) -> AccountsStreamItem {
+        let subpath = "/accounts/" + accountId
+        let streamItem = AccountsStreamItem(baseURL: serviceHelper.baseURL, subpath:subpath)
+        return streamItem
+    }
+
     /// Each account in the Stellar network can contain multiple key/value pairs associated with it. This fuction can be used to retrieve value of such a data key.
     /// See [Horizon API] (https://www.stellar.org/developers/horizon/reference/endpoints/data-for-account.html "Data for Account")
     ///

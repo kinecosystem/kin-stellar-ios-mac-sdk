@@ -772,6 +772,7 @@
 		83FE811323F0856600F4A13D /* FeeStatsRemoteTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE811123F0856600F4A13D /* FeeStatsRemoteTestCase.swift */; };
 		83FE811823F1C5FC00F4A13D /* TransactionMetaV2XDR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE811723F1C5FC00F4A13D /* TransactionMetaV2XDR.swift */; };
 		83FE811923F1C5FC00F4A13D /* TransactionMetaV2XDR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE811723F1C5FC00F4A13D /* TransactionMetaV2XDR.swift */; };
+		858ECDBA245DFB94006AF3D6 /* AccountsStreamItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858ECDB9245DFB94006AF3D6 /* AccountsStreamItem.swift */; };
 		C62F97DC2199BB54000A835A /* TomlResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F97DB2199BB54000A835A /* TomlResponseMock.swift */; };
 		C62F97E52199BE5B000A835A /* URISchemeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C8AAA62147D91000B06E8A /* URISchemeTestCase.swift */; };
 		C6744C1C21467195005DE204 /* URIScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6744C1B21467195005DE204 /* URIScheme.swift */; };
@@ -1262,6 +1263,7 @@
 		83FE810D23F0752700F4A13D /* MaxFeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxFeeResponse.swift; sourceTree = "<group>"; };
 		83FE811123F0856600F4A13D /* FeeStatsRemoteTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeStatsRemoteTestCase.swift; sourceTree = "<group>"; };
 		83FE811723F1C5FC00F4A13D /* TransactionMetaV2XDR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionMetaV2XDR.swift; sourceTree = "<group>"; };
+		858ECDB9245DFB94006AF3D6 /* AccountsStreamItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsStreamItem.swift; sourceTree = "<group>"; };
 		C62F97DB2199BB54000A835A /* TomlResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomlResponseMock.swift; sourceTree = "<group>"; };
 		C6744C1B21467195005DE204 /* URIScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIScheme.swift; sourceTree = "<group>"; };
 		C6744C1E2146A165005DE204 /* URISchemeErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URISchemeErrors.swift; sourceTree = "<group>"; };
@@ -1851,6 +1853,7 @@
 				745C41522040388900E33006 /* OperationsStreamItem.swift */,
 				745C415420403B4600E33006 /* EffectsStreamItem.swift */,
 				745C415620403CDF00E33006 /* LedgersStreamItem.swift */,
+				858ECDB9245DFB94006AF3D6 /* AccountsStreamItem.swift */,
 			);
 			path = Streaming;
 			sourceTree = "<group>";
@@ -3325,6 +3328,7 @@
 				833CBF90203351E600C23CFE /* MemoXDR.swift in Sources */,
 				43E34B632031D7AF003104A9 /* OfferLinksResponse.swift in Sources */,
 				83697246202A7C4B00398A98 /* CreatePassiveOfferOperationResponse.swift in Sources */,
+				858ECDBA245DFB94006AF3D6 /* AccountsStreamItem.swift in Sources */,
 				EC34A13C20503CC5000FB042 /* Updatable.swift in Sources */,
 				EC34A13320503CC5000FB042 /* String+Extension.swift in Sources */,
 				74D07EAF203C1BAE006DEF06 /* TransactionSignaturePayload.swift in Sources */,
