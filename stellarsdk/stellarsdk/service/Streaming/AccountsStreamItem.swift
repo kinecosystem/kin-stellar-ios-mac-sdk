@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class AccountsStreamItem: NSObject {
+open class AccountsStreamItem: NSObject {
     private var streamingHelper: StreamingHelper
     private var subpath: String
     private let jsonDecoder = JSONDecoder()
@@ -20,7 +20,7 @@ public class AccountsStreamItem: NSObject {
         jsonDecoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601)
     }
 
-    public func onReceive(response:@escaping StreamResponseEnum<AccountResponse>.ResponseClosure) {
+    open func onReceive(response:@escaping StreamResponseEnum<AccountResponse>.ResponseClosure) {
         streamingHelper.streamFrom(path:subpath) { [weak self] (helperResponse) -> (Void) in
             switch helperResponse {
             case .open:
@@ -40,7 +40,7 @@ public class AccountsStreamItem: NSObject {
         }
     }
 
-    public func closeStream() {
+    open func closeStream() {
         streamingHelper.close()
     }
 }

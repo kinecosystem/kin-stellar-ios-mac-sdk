@@ -17,7 +17,7 @@ public enum StreamResponseEnum<Data:Decodable> {
 }
 
 
-public class TransactionsStreamItem: NSObject {
+open class TransactionsStreamItem: NSObject {
     private var streamingHelper: StreamingHelper
     private var subpath: String
     private let jsonDecoder = JSONDecoder()
@@ -29,7 +29,7 @@ public class TransactionsStreamItem: NSObject {
         jsonDecoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601)
     }
     
-    public func onReceive(response:@escaping StreamResponseEnum<TransactionResponse>.ResponseClosure) {
+    open func onReceive(response:@escaping StreamResponseEnum<TransactionResponse>.ResponseClosure) {
         streamingHelper.streamFrom(path:subpath) { [weak self] (helperResponse) -> (Void) in
             switch helperResponse {
             case .open:
@@ -49,7 +49,7 @@ public class TransactionsStreamItem: NSObject {
         }
     }
     
-    public func closeStream() {
+    open func closeStream() {
         streamingHelper.close()
     }
 }
