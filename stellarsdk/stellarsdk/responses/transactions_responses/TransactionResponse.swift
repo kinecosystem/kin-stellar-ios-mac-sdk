@@ -55,6 +55,10 @@ public class TransactionResponse: NSObject, Decodable {
     public var transactionEnvelope: TransactionEnvelopeXDR
     public var transactionResult: TransactionResultXDR
     public var transactionMeta: TransactionMetaXDR
+
+    // Due to some inconsistencies in the encoding/decoding implementation inside `TransactionResultXDR`, need to
+    // hold this raw data as a workaround to be later decoded to a correct `TransactionResultXDR`.
+    public var transactionResultRawData: Data
     
     private enum CodingKeys: String, CodingKey {
         case links = "_links"
@@ -122,6 +126,7 @@ public class TransactionResponse: NSObject, Decodable {
         
         let encodedResult = try values.decode(String.self, forKey: .transactionResult)
         let resultData = Data(base64Encoded: encodedResult)!
+        transactionResultRawData = resultData
         transactionResult = try XDRDecoder.decode(TransactionResultXDR.self, data:resultData)
         
         let encodedMeta = try values.decode(String.self, forKey: .transactionMeta)
