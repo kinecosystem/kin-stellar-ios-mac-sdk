@@ -772,6 +772,7 @@
 		83FE811323F0856600F4A13D /* FeeStatsRemoteTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE811123F0856600F4A13D /* FeeStatsRemoteTestCase.swift */; };
 		83FE811823F1C5FC00F4A13D /* TransactionMetaV2XDR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE811723F1C5FC00F4A13D /* TransactionMetaV2XDR.swift */; };
 		83FE811923F1C5FC00F4A13D /* TransactionMetaV2XDR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE811723F1C5FC00F4A13D /* TransactionMetaV2XDR.swift */; };
+		85763679249135400011C356 /* ServerGoneErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763678249135400011C356 /* ServerGoneErrorResponse.swift */; };
 		858ECDBA245DFB94006AF3D6 /* AccountsStreamItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858ECDB9245DFB94006AF3D6 /* AccountsStreamItem.swift */; };
 		C62F97DC2199BB54000A835A /* TomlResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F97DB2199BB54000A835A /* TomlResponseMock.swift */; };
 		C62F97E52199BE5B000A835A /* URISchemeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C8AAA62147D91000B06E8A /* URISchemeTestCase.swift */; };
@@ -1263,6 +1264,7 @@
 		83FE810D23F0752700F4A13D /* MaxFeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxFeeResponse.swift; sourceTree = "<group>"; };
 		83FE811123F0856600F4A13D /* FeeStatsRemoteTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeStatsRemoteTestCase.swift; sourceTree = "<group>"; };
 		83FE811723F1C5FC00F4A13D /* TransactionMetaV2XDR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionMetaV2XDR.swift; sourceTree = "<group>"; };
+		85763678249135400011C356 /* ServerGoneErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerGoneErrorResponse.swift; sourceTree = "<group>"; };
 		858ECDB9245DFB94006AF3D6 /* AccountsStreamItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsStreamItem.swift; sourceTree = "<group>"; };
 		C62F97DB2199BB54000A835A /* TomlResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomlResponseMock.swift; sourceTree = "<group>"; };
 		C6744C1B21467195005DE204 /* URIScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIScheme.swift; sourceTree = "<group>"; };
@@ -2269,6 +2271,7 @@
 				83DD2C7A202DF4B000713FEE /* StaleHistoryErrorResponse.swift */,
 				83DD2C7C202E10A700713FEE /* TransactionFailedErrorResponse.swift */,
 				83DD2C80202E192A00713FEE /* TransactionMalformedErrorResponse.swift */,
+				85763678249135400011C356 /* ServerGoneErrorResponse.swift */,
 			);
 			path = error_responses;
 			sourceTree = "<group>";
@@ -3442,6 +3445,7 @@
 				833CBFD72036F01700C23CFE /* CreateAccountOperation.swift in Sources */,
 				833CBFA6203353C900C23CFE /* ChangeTrustOperationXDR.swift in Sources */,
 				EC34A15020503CC5000FB042 /* BlockModeWorker.swift in Sources */,
+				85763679249135400011C356 /* ServerGoneErrorResponse.swift in Sources */,
 				743060CD213822E100E2E9F2 /* DataRemovedEffectResponse.swift in Sources */,
 				7467C4102142B48200412FE1 /* CustomerInformationNeededNonInteractive.swift in Sources */,
 				43E34B692031E243003104A9 /* OrderbookOfferResponse.swift in Sources */,

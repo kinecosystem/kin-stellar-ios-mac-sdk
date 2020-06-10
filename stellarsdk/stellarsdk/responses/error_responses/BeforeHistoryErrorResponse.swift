@@ -10,4 +10,6 @@ import Foundation
 
 ///  Represents a before history error response from the horizon api (code 410), containing information related to the error
 ///  See [Horizon API](https://www.stellar.org/developers/horizon/reference/errors/before-history.html "Before History")
+///  Deprecated and replaced by `ServerGoneErrorResponse` for Kin blockchain.
+@available(*, deprecated)
 public class BeforeHistoryErrorResponse: ErrorResponse {}

@@ -291,7 +291,8 @@ public class TransferServerService: NSObject {
              .rateLimitExceeded(let message, _),
              .internalServerError(let message, _),
              .notImplemented(let message, _),
-             .staleHistory(let message, _):
+             .staleHistory(let message, _),
+             .serverGone(let message, _):
             if let data = message.data(using: .utf8) {
                 do {
                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any], let error = json["error"] as? String {

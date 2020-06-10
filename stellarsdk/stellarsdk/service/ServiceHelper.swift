@@ -231,12 +231,12 @@ class ServiceHelper: NSObject {
                 case 410: // Gone
                     if let data = data {
                         do {
-                            let beforeHistoryErrorResponse = try self.jsonDecoder.decode(BeforeHistoryErrorResponse.self, from: data)
-                            completion(.failure(error:.beforeHistory(message:message, horizonErrorResponse:beforeHistoryErrorResponse)))
+                            let serverGoneErrorResponse = try self.jsonDecoder.decode(ServerGoneErrorResponse.self, from: data)
+                            completion(.failure(error:.serverGone(message:message, horizonErrorResponse:serverGoneErrorResponse)))
                             return
                         } catch {}
                     }
-                    completion(.failure(error:.beforeHistory(message:message, horizonErrorResponse:nil)))
+                    completion(.failure(error:.serverGone(message:message, horizonErrorResponse:nil)))
                     return
                 case 429: // Too many requests
                     if let data = data {
