@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Soneso/stellar-ios-mac-sdk.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/kinecosystem/stellar-ios-mac-sdk-fork.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -140,9 +140,9 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
   s.pod_target_xcconfig = {
-      'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'           => '$(SRCROOT)/stellar-ios-mac-sdk/stellarsdk/stellarsdk/libs/ed25519-C/** $(SRCROOT)/stellar-ios-mac-sdk/stellarsdk/stellarsdk/iphone', 
-      'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'    => '$(SRCROOT)/stellar-ios-mac-sdk/stellarsdk/stellarsdk/libs/ed25519-C/** $(SRCROOT)/stellar-ios-mac-sdk/stellarsdk/stellarsdk/simulator',
-      'SWIFT_INCLUDE_PATHS[sdk=macosx*]'    => '$(SRCROOT)/stellar-ios-mac-sdk/stellarsdk/stellarsdk/libs/ed25519-C/** $(SRCROOT)/stellar-ios-mac-sdk/stellarsdk/stellarsdk/osx',
+      'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'           => '$(SRCROOT)/kin-stellar-ios-mac-sdk/stellarsdk/stellarsdk/libs/ed25519-C/** $(SRCROOT)/kin-stellar-ios-mac-sdk/stellarsdk/stellarsdk/iphone',
+      'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'    => '$(SRCROOT)/kin-stellar-ios-mac-sdk/stellarsdk/stellarsdk/libs/ed25519-C/** $(SRCROOT)/kin-stellar-ios-mac-sdk/stellarsdk/stellarsdk/simulator',
+      'SWIFT_INCLUDE_PATHS[sdk=macosx*]'    => '$(SRCROOT)/kin-stellar-ios-mac-sdk/stellarsdk/stellarsdk/libs/ed25519-C/** $(SRCROOT)/kin-stellar-ios-mac-sdk/stellarsdk/stellarsdk/osx',
   }
 
 end
