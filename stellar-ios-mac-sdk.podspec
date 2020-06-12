@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "kin-stellar-ios-mac-sdk"
+  s.name         = "stellar-ios-mac-sdk"
   s.version      = "1.7.3"
-  s.summary      = "Forked Stellar SDK from Soneso/stellar-ios-mac-sdk"
+  s.summary      = "Fully featured iOS and macOS SDK that provides APIs to build transactions and connect to Horizon server for the Stellar ecosystem."
   s.module_name  = 'stellarsdk'
   s.swift_version = '5.0'
 
