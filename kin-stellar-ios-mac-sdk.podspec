@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint stellar-ios-mac-sdk.podspec' to ensure this is a
+#  Be sure to run `pod spec lint kin-stellar-ios-mac-sdk.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "stellar-ios-mac-sdk"
+  s.name         = "kin-stellar-ios-mac-sdk"
   s.version      = "1.7.3"
   s.summary      = "Fully featured iOS and macOS SDK that provides APIs to build transactions and connect to Horizon server for the Stellar ecosystem."
   s.module_name  = 'stellarsdk'
