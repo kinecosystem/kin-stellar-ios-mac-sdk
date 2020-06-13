@@ -2,9 +2,9 @@
 //  ServerGoneErrorResponse.swift
 //  stellarsdk
 //
-//  Created by Kin Foundation on 2020-06-10.
+//  Created by Kik Interactive Inc. on 2020-06-10.
 //  Copyright © 2020 Kin Foundation. All rights reserved.
-//
+//  SPDX-License-Identifier: Apache-2.0
 
 import Foundation
 

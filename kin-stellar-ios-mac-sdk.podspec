@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "kin-stellar-ios-mac-sdk"
   s.version      = "1.7.4"
-  s.summary      = "Fully featured iOS and macOS SDK that provides APIs to build transactions and connect to Horizon server for the Stellar ecosystem."
+  s.summary      = "Fork of Soneso stellar-ios-mac-sdk that provides APIs to build transactions and connect to Horizon server on Kin Blockchain."
   s.module_name  = 'stellarsdk'
   s.swift_version = '5.0'
 
@@ -27,10 +27,9 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  The Soneso iOS and macOS Stellar SDK facilitates integration with the Stellar Horizon API server and submission of Stellar transactions, either in your iOS or macOS app. It has two main uses: querying Horizon and building, signing, and submitting transactions to the Stellar network. The SDK gives you access to all the endpoints exposed by Horizon. Using Horizon, many requests can be invoked in streaming mode. All available streaming endpoints are covered by the SDK and you can use the SDK streaming functions to listen for updates. The SDK also covers encoding and decoding of all XDR Objects available.
-  DESC
+                    DESC
 
-  s.homepage     = "https://github.com/Soneso/stellar-ios-mac-sdk"
+  s.homepage     = "https://github.com/kinecosystem/kin-stellar-ios-mac-sdk"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -42,7 +41,6 @@ Pod::Spec.new do |s|
   #
 
   s.license      = { :type => "Apache 2.0", :file => "LICENSE" }
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -55,10 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Soneso" => "stellarsdk@soneso.com" }
-  # Or just: s.author    = "Razvan Chelemen"
-  # s.authors            = { "Razvan Chelemen" => "chelemen.razvan@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/Razvan Chelemen"
+  s.author             = { "Kik Interactive Inc." => "engineering@kik.com" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -66,14 +61,9 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  #s.platform     = :ios, "8.0"
-  # s.platform     = :ios, "5.0"
-
   #  When using multiple platforms
    s.ios.deployment_target = "8.0"
    s.osx.deployment_target = "10.10"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -82,7 +72,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/kinecosystem/stellar-ios-mac-sdk-fork.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/kinecosystem/kin-stellar-ios-mac-sdk.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -2,9 +2,9 @@
 //  AccountsStreamItem.swift
 //  stellarsdk
 //
-//  Created by Kin Foundation on 2020-05-02.
-//  Copyright © 2020 Soneso. All rights reserved.
-//
+//  Created by Kik Interactive Inc. on 2020-05-02.
+//  Copyright © 2020 Kin Foundation. All rights reserved.
+//  SPDX-License-Identifier: Apache-2.0
 
 import Foundation
 
