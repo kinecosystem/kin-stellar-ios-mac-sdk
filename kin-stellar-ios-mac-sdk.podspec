@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "kin-stellar-ios-mac-sdk"
   s.version      = "1.7.4"
-  s.summary      = "Fork of Soneso stellar-ios-mac-sdk that provides APIs to build transactions and connect to Horizon server on Kin Blockchain."
+  s.summary      = "stellar-ios-mac-sdk for Kin Blockchain"
   s.module_name  = 'stellarsdk'
   s.swift_version = '5.0'
 
@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+    Fork of Soneso stellar-ios-mac-sdk that provides APIs to build transactions and connect to Horizon server on Kin Blockchain.
                     DESC
 
   s.homepage     = "https://github.com/kinecosystem/kin-stellar-ios-mac-sdk"
