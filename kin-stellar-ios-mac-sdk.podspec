@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "kin-stellar-ios-mac-sdk"
-  s.version      = "1.7.4"
+  s.version      = "1.7.5"
   s.summary      = "stellar-ios-mac-sdk for Kin Blockchain"
   s.module_name  = 'stellarsdk'
   s.swift_version = '5.0'
